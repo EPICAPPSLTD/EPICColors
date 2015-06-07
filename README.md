@@ -36,7 +36,7 @@ let color3_alternative = UIColor(hexString: "#22ac4d") // returns a color equiva
 let color4_alternative = UIColor(hexString: "89cc24ab") // returns a color equivalent to "#89cc24" with alpha
 ```
 
-This class serves as an extension to the tutorial of the blog article: ["A splash of UIColors"](TODO).
+This class serves as an extension to the tutorial of the blog article: ["A splash of UIColors"](http://epic-apps.uk/2015/06/07/a-splash-of-uicolors/).
 Usage is free for all based on the attached license details, if you find this code useful, please consider [making a donation](http://epic-apps.uk/donations/). :)
 
 Copyright (c) EPIC 
