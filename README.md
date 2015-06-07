@@ -24,10 +24,16 @@ Note that the parser is case insensitive. Colors can optionally be appended with
 
 #### Usage:
 ```swift
-let color1 = UIColor(hexString: "FA")
-let color2 = UIColor(hexString: "#6F2A")
-let color3 = UIColor(hexString: "0x22ac4d")
-let color4 = UIColor(hexString: "0X89cc24ab")
+let color1 = UIColor(hexString: "FA") // returns a color equivalent to "#fafafa"
+let color2 = UIColor(hexString: "#6F2A") // returns a color equivalent to "#6f6f6f with alpha"
+let color3 = UIColor(hexString: "0x22ac4d") // returns a color equivalent to "#22ac4d"
+let color4 = UIColor(hexString: "0X89cc24ab") // returns a color equivalent to "#89cc24" with alpha
+
+//alternative notations return the same UIColor objects
+let color1_alternative = UIColor(hexString: "0XFA") // returns a color equivalent to "#fafafa"
+let color2_alternative = UIColor(hexString: "0x6F2A") // returns a color equivalent to "#6f6f6f with alpha"
+let color3_alternative = UIColor(hexString: "#22ac4d") // returns a color equivalent to "#22ac4d"
+let color4_alternative = UIColor(hexString: "89cc24ab") // returns a color equivalent to "#89cc24" with alpha
 ```
 
 This class serves as an extension to the tutorial of the blog article: ["A splash of UIColors"](TODO).
