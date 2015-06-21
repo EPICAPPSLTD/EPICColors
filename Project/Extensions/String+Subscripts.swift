@@ -16,6 +16,7 @@ import Foundation
 
 extension String {
   
+    //MARK: - subscripts
     subscript(index: Int) -> String {
         let index = advance(self.startIndex, index)
         return String(self[index])

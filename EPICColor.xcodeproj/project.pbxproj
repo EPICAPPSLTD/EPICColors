@@ -35,7 +35,7 @@
 		8FD5B42F1B1FB68400F7130D /* UIColor+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
 		8FD5B4311B1FB74700F7130D /* String+Subscripts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Subscripts.swift"; sourceTree = "<group>"; };
 		8FD5B43B1B1FBC0400F7130D /* UIColorExtensionsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtensionsTests.swift; sourceTree = "<group>"; };
-		8FF3A4511AD068DD00547D53 /* EPICBaseProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = EPICBaseProject.app; path = EPICColor.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8FF3A4511AD068DD00547D53 /* EPICColor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EPICColor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FF3A4661AD068DD00547D53 /* EPICColorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EPICColorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FF3A4E81AD07DA200547D53 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8FF3A4ED1AD07DD800547D53 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -77,7 +77,7 @@
 		8FF3A4521AD068DD00547D53 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8FF3A4511AD068DD00547D53 /* EPICBaseProject.app */,
+				8FF3A4511AD068DD00547D53 /* EPICColor.app */,
 				8FF3A4661AD068DD00547D53 /* EPICColorTests.xctest */,
 			);
 			name = Products;
@@ -172,7 +172,7 @@
 			);
 			name = EPICColor;
 			productName = BaseProject;
-			productReference = 8FF3A4511AD068DD00547D53 /* EPICBaseProject.app */;
+			productReference = 8FF3A4511AD068DD00547D53 /* EPICColor.app */;
 			productType = "com.apple.product-type.application";
 		};
 		8FF3A4651AD068DD00547D53 /* EPICColorTests */ = {
@@ -199,7 +199,8 @@
 		8FF3A4491AD068DD00547D53 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0620;
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = EPIC;
 				TargetAttributes = {
 					8FF3A4501AD068DD00547D53 = {
@@ -325,6 +326,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				INFOPLIST_FILE = Project/Resources/Plists/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "uk.epic.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = EPICColor;
 			};
 			name = AdHoc;
@@ -333,12 +335,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
 				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "uk.epic.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = EPICColorTests;
 			};
 			name = AdHoc;
@@ -362,6 +361,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -426,6 +426,7 @@
 				INFOPLIST_FILE = Project/Resources/Plists/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_SWIFT_FLAGS = "-D DEBUG";
+				PRODUCT_BUNDLE_IDENTIFIER = "uk.epic.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = EPICColor;
 			};
 			name = Debug;
@@ -437,6 +438,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				INFOPLIST_FILE = Project/Resources/Plists/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "uk.epic.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = EPICColor;
 			};
 			name = Release;
@@ -445,10 +447,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -456,6 +454,7 @@
 				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				OTHER_SWIFT_FLAGS = "-D DEBUG";
+				PRODUCT_BUNDLE_IDENTIFIER = "uk.epic.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = EPICColorTests;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -465,12 +464,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
 				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "uk.epic.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = EPICColorTests;
 			};
 			name = Release;

@@ -63,10 +63,10 @@ private class EPICHexStringScanner {
     - 0xFF
     - 0XFF
     
-    :param: hexString The 2 character long hex string to process and pull the color values from.
-    :param: red An inout `UInt32` pointer to assign the output red value to.
-    :param: green An inout `UInt32` pointer to assign the output green value to.
-    :param: blue An inout `UInt32` pointer to assign the output blue value to.
+    - parameter hexString: The 2 character long hex string to process and pull the color values from.
+    - parameter red: An inout `UInt32` pointer to assign the output red value to.
+    - parameter green: An inout `UInt32` pointer to assign the output green value to.
+    - parameter blue: An inout `UInt32` pointer to assign the output blue value to.
     
     :warning: Characters in the input string must be composed by characters 0-9, a-z or A-Z. Failure to do so will result in an assertion failure. Failure to provide the correct expected `hexString` notation has undefined behaviour.
     */
@@ -87,11 +87,11 @@ private class EPICHexStringScanner {
     - 0xFF00
     - 0XFF00
     
-    :param: hexString The 4 character long hex string to process and pull the color values from.
-    :param: red An inout `UInt32` pointer to assign the output red value to.
-    :param: green An inout `UInt32` pointer to assign the output green value to.
-    :param: blue An inout `UInt32` pointer to assign the output blue value to.
-    :param: alpha Lorem Lipsum
+    - parameter hexString: The 4 character long hex string to process and pull the color values from.
+    - parameter red: An inout `UInt32` pointer to assign the output red value to.
+    - parameter green: An inout `UInt32` pointer to assign the output green value to.
+    - parameter blue: An inout `UInt32` pointer to assign the output blue value to.
+    - parameter alpha: Lorem Lipsum
     
     :warning: Characters in the input string must be composed by characters 0-9, a-z or A-Z. Failure to do so will result in an assertion failure. Failure to provide the correct expected `hexString` notation has undefined behaviour.
     */
@@ -112,11 +112,11 @@ private class EPICHexStringScanner {
     - 0xFF00CC
     - 0XFF00CC
     
-    :param: hexString The 6 character long hex string to process and pull the color values from.
-    :param: red An inout `UInt32` pointer to assign the output red value to.
-    :param: green An inout `UInt32` pointer to assign the output green value to.
-    :param: blue An inout `UInt32` pointer to assign the output blue value to.
-    :param: alpha An inout `UInt32` pointer to assign the output alpha value to.
+    - parameter hexString: The 6 character long hex string to process and pull the color values from.
+    - parameter red: An inout `UInt32` pointer to assign the output red value to.
+    - parameter green: An inout `UInt32` pointer to assign the output green value to.
+    - parameter blue: An inout `UInt32` pointer to assign the output blue value to.
+    - parameter alpha: An inout `UInt32` pointer to assign the output alpha value to.
     
     :warning: Characters in the input string must be composed by characters 0-9, a-z or A-Z. Failure to do so will result in an assertion failure. Failure to provide the correct expected `hexString` notation has undefined behaviour.
     */
@@ -136,11 +136,11 @@ private class EPICHexStringScanner {
     - 0xFF00CCAA
     - 0XFF00CCAA
     
-    :param: hexString The 8 character long hex string to process and pull the color values from.
-    :param: red An inout `UInt32` pointer to assign the output red value to.
-    :param: green An inout `UInt32` pointer to assign the output green value to.
-    :param: blue An inout `UInt32` pointer to assign the output blue value to.
-    :param: alpha An inout `UInt32` pointer to assign the output alpha value to.
+    - parameter hexString: The 8 character long hex string to process and pull the color values from.
+    - parameter red: An inout `UInt32` pointer to assign the output red value to.
+    - parameter green: An inout `UInt32` pointer to assign the output green value to.
+    - parameter blue: An inout `UInt32` pointer to assign the output blue value to.
+    - parameter alpha: An inout `UInt32` pointer to assign the output alpha value to.
     
     :warning: Characters in the input string must be composed by characters 0-9, a-z or A-Z. Failure to do so will result in an assertion failure. Failure to provide the correct `hexString` notation has undefined behaviour.
     */
