@@ -37,7 +37,7 @@ let color4_alternative = UIColor(hexString: "89cc24ab") // returns a color equiv
 ```
 
 This class serves as an extension to the tutorial of the blog article: ["A splash of UIColors"](http://epic-apps.uk/2015/06/07/a-splash-of-uicolors/).
-Usage is free for all based on the attached license details, if you find this code useful, please consider [making a donation](http://epic-apps.uk/donations/). :)
+Usage is free for all based on the attached license details, if you find this code useful, please consider [letting me know](helloworld@epic-apps.uk)! :)
 
 Copyright (c) EPIC 
 [www.epic-apps.uk](www.epic-apps.uk)
